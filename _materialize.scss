@@ -1,0 +1,17 @@
+.fab.materialize{
+  .btn-floating ceri-icon {
+    width: inherit;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 44px;
+  }
+  .btn-floating.btn-large ceri-icon {
+    line-height: 60px;
+  }
+  .btn-floating:not(.btn-large) {
+    margin-left: 6px;
+    margin-bottom: 12px;
+  }
+}
