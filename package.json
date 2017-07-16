@@ -20,15 +20,18 @@
   "engines": {
     "node": "*"
   },
-  "dependencies": {
-    "ceri": "^1.0.21",
-    "ceri-icon": "^0.1.0",
+  "peerDependencies": {
     "ceri-tooltip": "^0.1.0"
   },
+  "dependencies": {
+    "ceri": "^1.0.24",
+    "ceri-icon": "^0.1.0"
+  },
   "devDependencies": {
-    "ceri-compiler": "^1.1.1",
-    "ceri-dev-server": "^1.0.7",
+    "ceri-compiler": "^1.1.2",
+    "ceri-dev-server": "^1.0.9",
     "ceri-materialize": "^1.0.1",
+    "ceri-tooltip": "^0.1.0",
     "coffee-loader": "^0.7.3",
     "coffee-script": "^1.12.6",
     "gh-pages": "^1.0.0",

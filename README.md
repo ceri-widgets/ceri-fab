@@ -8,7 +8,7 @@ A flexible fixed-action-button menu. Only usable as a mixin for other ceri compo
 # Install
 
 ```sh
-npm install --save-dev ceri-fab
+npm install --save-dev ceri-fab ceri-tooltip
 ```
 ## Usage
 
@@ -43,8 +43,9 @@ Include the icons you need.
 #### Materialize
 - setup [ceri-materialize](https://github.com/ceri-comps/ceri-materialize) and load the scss.
 ```scss
-// and this additional requirement
+// and this additional requirements
 @import "~ceri-fab/materialize";
+@import "~ceri-tooltip/materialize";
 ```
 - load theme file
 ```coffee

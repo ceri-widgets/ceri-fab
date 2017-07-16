@@ -26,8 +26,6 @@ module.exports = createView
     delete: "Delete"
   classes:
     deleteButton: "red"
-  tests: (el) ->
-    describe "ceri-fab", ->
-      after ->
-        el.remove()
-      it "should work", ->
+  tests: ceriFab: ->
+    it "should work", =>
+      should.exist(@)
