@@ -8,7 +8,7 @@ A flexible fixed-action-button menu. Only usable as a mixin for other ceri compo
 # Install
 
 ```sh
-npm install --save-dev ceri-fab ceri-tooltip
+npm install --save-dev ceri-fab ceri-tooltip ceri-icon
 ```
 ## Usage
 

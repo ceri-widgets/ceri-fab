@@ -18,6 +18,7 @@ module.exports =
   mixins: [
     require "ceri/lib/for"
     require "ceri/lib/structure"
+    require "ceri/lib/c-mount"
   ]
 
   _elLookup:
@@ -50,8 +51,9 @@ module.exports =
               name = @_action.name+"Button" if @_action
               classes.push tmp if (tmp = @classes?[name])?
               return classes.join(" ")
+            _onClick: -> @$path.resolveValue(@_action.onClick)
           template: template(1,"""
-            <a style="position:relative" :class=_classes @click.dyn=_action.onClick>
+            <a style="position:relative" :class=_classes @click=_onClick>
               <ceri-icon :name.expr="@icon[@_action.name]"></ceri-icon>
               <c-mount template=_action.child></c-mount>
             </a>

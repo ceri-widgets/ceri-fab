@@ -13,11 +13,12 @@ module.exports = createView
   data: ->
     open: false
   fab:
-    
-    upload:
-      onClick: -> console.log "test"
     delete:
       if: -> @open
+      onClick: -> console.log "test2"
+    upload:
+      onClick: -> console.log "test"
+    
   icon:
     upload: "ma-file_upload"
     delete: "ma-delete_forever"
