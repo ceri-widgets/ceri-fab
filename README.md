@@ -41,12 +41,8 @@ Include the icons you need.
 
 ## Themes
 #### Materialize
-- setup [ceri-materialize](https://github.com/ceri-comps/ceri-materialize) and load the scss.
-```scss
-// and this additional requirements
-@import "~ceri-fab/materialize";
-@import "~ceri-tooltip/materialize";
-```
+- setup [ceri-materialize](https://github.com/ceri-comps/ceri-materialize)
+
 - load theme file
 ```coffee
 require("ceri-fab")(require("ceri-fab/materialize"))
@@ -61,7 +57,9 @@ npm install
 npm run dev
 ```
 Browse to `http://localhost:8080/`.
-
+## Notable changes
+#### 0.2.0
+- use ceri-materialize@2
 ## License
 Copyright (c) 2017 Paul Pflugradt
 Licensed under the MIT license.
